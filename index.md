@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+# Title Of The Paper
+***
 
-You can use the [editor on GitHub](https://github.com/PerisD/Sac2.0/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+[Abstract]
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## XXX Genomes
 
-### Markdown
+[Description of the sequencing and libraries]
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Description of the dataset]
 
-```markdown
-Syntax highlighted code block
+Strain | Nuclear Assembly | Annotation | mtDNA | 2 micron
+-------|------------------|------------|-------|---------
+Strain 1|XXX|XXX|XXX|XXX
+Strain 2|XXX|XXX|XXX|XXX
 
-# Header 1
-## Header 2
-### Header 3
+## Supplementary Data
 
-- Bulleted
-- List
+## Scripts
 
-1. Numbered
-2. List
+## Raw Reads
 
-**Bold** and _Italic_ and `Code` text
+[Description where raw reads were stored]
 
-[Link](url) and ![Image](src)
-```
+***
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Contact
 
-### Jekyll Themes
+[Linkedin](https://goo.gl/xglg8H)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PerisD/Sac2.0/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[Twitter](https://goo.gl/OS0O2F)
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Peris Webpage](https://www.uv.es/perisnav/)
