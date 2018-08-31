@@ -26,8 +26,9 @@ Strain 2|XXX|XXX|XXX|XXX
 
 ### Contact
 
-[Linkedin](https://goo.gl/xglg8H)
+[<img src="http://1000logos.net/wp-content/uploads/2017/03/LinkedIn-Logo.png" width="40"/>](https://goo.gl/xglg8H)
 
-[Twitter](https://goo.gl/OS0O2F)
+[<img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" width="50"/>](https://goo.gl/OS0O2F)
 
-[Peris Webpage](https://www.uv.es/perisnav/)
+[<img src="https://www.uv.es/perisnav/images/Mitogression.png" width="60"/>](https://www.uv.es/perisnav/)
+
