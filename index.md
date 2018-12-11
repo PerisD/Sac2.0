@@ -16,7 +16,7 @@ Strain |Species|Pop| Nuclear | mtDNA | 2 micron plasmid
 yHAB335|S.cerevisiae|CHN IV|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHAB335.ngenome.gz "NGENOME")|[MtGENOME](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/yHAB335.mtgenome.gz "MtGENOME")|NO
 yHDPN23|S.paradoxus|Am-B|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHDPN23.ngenome.gz "NGENOME")|[MtGENOME](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/yHDPN23.mtgenome.gz "MtGENOME")|NO
 yHDPN24|S.paradoxus|Am-C|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHDPN24.ngenome.gz "NGENOME")|[MtGENOME](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/yHDPN24.mtgenome.gz "MtGENOME")|NO
-yHDPN32|S.paradoxus|EU/Am-A|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHDPN32.ngenome.gz "NGENOME")|[MtGENOME](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/yHDPN32.mtgenome.gz "MtGENOME")|2mGENOME
+yHDPN32|S.paradoxus|EU/Am-A|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHDPN32.ngenome.gz "NGENOME")|[MtGENOME](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/yHDPN32.mtgenome.gz "MtGENOME")|[2mGENOME](https://github.com/PerisD/Sac2.0/blob/master/2mGENOME/yHDPN32.2mplasmid.gz "2mGENOME")
 IFO1815|S.mikatae|Asia-A|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/IFO1815.ngenome.gz "NGENOME")|[Suloetal2017](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/IFO1815.mtgenome.gz "Suloetal2017")|NO
 yHAB336|S.mikatae|Asia-B|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHAB336.ngenome.gz "NGENOME")|Incomplete|Nuclear
 IFO1802|S.kudriavzevii|Asia-A|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/IFO1802.ngenome.gz "NGENOME")|[Suloetal2017](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/IFO1802.mtgenome.gz "Suloetal2017")|Nuclear
@@ -34,7 +34,7 @@ yHAB60|S.uvarum|HOL/SA-A|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/
 yHAB447|S.uvarum|HOL/SA-A|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHAB447.ngenome.gz "NGENOME")|[MtGENOME](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/yHAB447.mtgenome.gz "MtGENOME")|Nuclear
 yHAB482|S.uvarum|HOL/SA-A|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHAB482.ngenome.gz "NGENOME")|[MtGENOME](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/yHAB482.mtgenome.gz "MtGENOME")|Nuclear
 yHAB521|S.uvarum|SA-B|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHAB521.ngenome.gz "NGENOME")|[MtGENOME](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/yHAB521.mtgenome.gz "MtGENOME")|Nuclear
-yHCT77|S.uvarum|HOL-NA|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHCT77.ngenome.gz "NGENOME")|Incomplete|2mGENOME
+yHCT77|S.uvarum|HOL-NA|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHCT77.ngenome.gz "NGENOME")|Incomplete|[2mGENOME](https://github.com/PerisD/Sac2.0/blob/master/2mGENOME/yHCT77.2mplasmid.gz "2mGENOME")
 ZP964|S.uvarum|Australasia|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/ZP964.ngenome.gz "NGENOME")|[MtGENOME](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/ZP964.mtgenome.gz "MtGENOME")|Nuclear
 
 [Description of the Genomes from others or corrected versions]
