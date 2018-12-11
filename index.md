@@ -13,7 +13,7 @@
 
 Strain |Species|Pop| Nuclear Assembly | mtDNA | 2 micron plasmid
 -------|-------|---|------------------|-------|-----------------
-yHAB335|S.cerevisiae|CHN IV|NGENOME|MtGENOME|NO
+yHAB335|S.cerevisiae|CHN IV|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/test.rar "NGENOME")|MtGENOME|NO
 yHDPN23|S.paradoxus|Am-B|NGENOME|MtGENOME|NO
 yHDPN24|S.paradoxus|Am-C|NGENOME|MtGENOME|NO
 yHDPN32|S.paradoxus|EU/Am-A|NGENOME|MtGENOME|2mGENOME
@@ -51,7 +51,7 @@ XXX|XXX|XXX|XXX|XXX|XXX
 
 ## Raw Reads
 
-[Description where raw reads were stored]
+The Illumina sequencing reads for this project has been deposed in the Short Reads Archive (SRA) under project XXX
 
 ***
 
