@@ -41,7 +41,7 @@ ZP964|S.uvarum|Australasia|[NGENOME](https://github.com/PerisD/Sac2.0/blob/maste
 
 Strain |Species|Pop| Nuclear | mtDNA | 2 micron plasmid
 -------|-------|---|------------------|-------|-----------------
-NCYC3947|S.jurei|EU|XXX|[Naseebetal2018(Corrected)](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/NCYC3947.mtgenome.gz "Naseebetal2018(Corrected)")|XXX
+NCYC3947|S.jurei|EU|[Naseebetal2018](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/290/405/GCA_900290405.1_SacJureiUoM1 "Naseebetal2018")|[Naseebetal2018(Corrected)](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/NCYC3947.mtgenome.gz "Naseebetal2018(Corrected)")|XXX
 CBS10644|S.arboricola|Asia-A|[Yueetal2017](https://yjx1217.github.io/Yeast_PacBio_2016/data/ "Yueetal2017")|[Suloetal2017](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/CBS10644.mtgenome.gz "Suloetal2017")|XXX
 
 [Description of the other genome assemblies dataset]
