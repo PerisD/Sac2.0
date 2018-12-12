@@ -37,6 +37,7 @@ yHAB521|*S.uvarum*|SA-B|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/N
 yHCT77|*S.uvarum*|HOL-NA|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/yHCT77.ngenome.gz "NGENOME")|Incomplete|[2mGENOME](https://github.com/PerisD/Sac2.0/blob/master/2mGENOME/yHCT77.2mplasmid.gz "2mGENOME")
 ZP964|*S.uvarum*|Australasia|[NGENOME](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/ZP964.ngenome.gz "NGENOME")|[MtGENOME](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/ZP964.mtgenome.gz "MtGENOME")|Nuclear
 
+
 Corrections or genome assemblies used in the recent work:
 
 Strain |Species|Pop| Nuclear | mtDNA | 2 micron plasmid
@@ -44,10 +45,11 @@ Strain |Species|Pop| Nuclear | mtDNA | 2 micron plasmid
 NCYC3947|*S.jurei*|EU|[Naseebetal2018](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/290/405/GCA_900290405.1_SacJureiUoM1 "Naseebetal2018")|[Naseebetal2018(Corrected)](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/NCYC3947.mtgenome.gz "Naseebetal2018(Corrected)")|XXX
 CBS10644|*S.arboricola*|Asia-A|[Liti et al 2013](https://yjx1217.github.io/Yeast_PacBio_2016/data/ "YPRP")|[Suloetal2017](https://github.com/PerisD/Sac2.0/blob/master/MtGENOMES/CBS10644.mtgenome.gz "Suloetal2017")|XXX
 
+
 Other genome assemblies from recent papers stored in Github:
 2. [Yue et al 2017](https://yjx1217.github.io/Yeast_PacBio_2016/data/ "YPRP"): CBS432, DBVPG6044, DBVPG6765, N44, SK1, UFRJ50816, UWOPS03-461.4, UWOPS91-917.1, Y12, YPS128, YPS138
 
-The rest of genome assemblies for *Saccharomyces* strains, where just Paired-End Illumina reads were used, are compressed in this fileXXX
+The rest of genome assemblies for *Saccharomyces* strains, where just Paired-End Illumina reads were used, are compressed in this [file](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/other.assemblies.gz "OtherAssemblies")
 
 ## Supplementary Data
 
@@ -55,7 +57,7 @@ The rest of genome assemblies for *Saccharomyces* strains, where just Paired-End
 
 ## Raw Reads
 
-The Illumina sequencing reads for this project has been deposed in the Short Reads Archive (SRA) under project XXX
+The Illumina sequencing reads for this project has been deposed in the Short Reads Archive (SRA) under bioproject PRJNA475869
 
 ***
 
