@@ -65,9 +65,7 @@ The Illumina sequencing reads for this project has been deposed in the Short Rea
 
 ### Contact
 
-[<img src="http://1000logos.net/wp-content/uploads/2017/03/LinkedIn-Logo.png" width="40"/>](https://goo.gl/xglg8H)
-
-[<img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" width="50"/>](https://goo.gl/OS0O2F)
+[<img src="https://www.uv.es/perisnav/Index/twitter-logo.png" width="50"/>](https://linktr.ee/PerisD)
 
 [<img src="https://www.uv.es/perisnav/images/Mitogression.png" width="60"/>](https://www.uv.es/perisnav/)
 
