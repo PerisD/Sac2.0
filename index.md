@@ -1,17 +1,34 @@
-# Title Of The Paper
+## Title Of The Paper
 ***
 
-[Abstract]
+XXX
+
+**Authors**:
+
+**Journal**:
+
+**Year**:
+
+**Abstract**:
+
 
 <div style="text-align:center"><img src="https://sismo.app/wp-content/uploads/2019/02/under-construction-gif-11.gif" width="250"/></div>
 
 [Phylogenetic Tree](http://XXX)
 
-## Saccharomyces Genomes
+### Saccharomyces strains
+
+Request information for Saccharomyces strains used in this study can be found in Table SXXX.
+
+### Raw Reads
+
+The Illumina sequencing reads for this project has been deposed in the Short Reads Archive (SRA) under bioproject PRJNA475869
+
+### Saccharomyces genomes
 
 [Description of the sequencing and libraries]
 
-New nuclear, mitochondrial and genome assemblies for different *Saccharomyces* lineages assembled by using Paired-End and Mate Pair Illumina libraries. FIles were deposited to the European Nucleotide Archive.
+New nuclear, mitochondrial and genome assemblies for different *Saccharomyces* lineages assembled by using Paired-End and Mate Pair Illumina libraries. FIles were deposited to the European Nucleotide Archive under bioproject PRJEB48264.
 
 Strain |Species|Pop| ENA Accession no
 -------|-------|---|------------------
@@ -53,13 +70,131 @@ Other genome assemblies from recent papers stored in Github:
 
 The rest of genome assemblies for *Saccharomyces* strains, using just Paired-End Illumina reads, are compressed in this [file](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/other.assemblies.gz "OtherAssemblies")
 
-## Supplementary Data
+*COX2* and *COX3* sequences were deposited in GenBank under accession nos. MH813536-MH813939.
 
-## Scripts
+*GAL* genes that were Sanger sequenced were deposited in GenBank under accession nos. OL660614-OL660618.
 
-## Raw Reads
+### Source data
 
-The Illumina sequencing reads for this project has been deposed in the Short Reads Archive (SRA) under bioproject PRJNA475869
+Raw data, alignments and results were deposited in [Dryad](doi:10.5061/dryad.rxwdbrv9p "Dryad repository"). The repository contains:
+
+1. Alignments of 2um plasmid genes *REP1* and *REP2* used in Figure XXX.
+
+2. ASTRAL run and outputs to generate Figure XXX.
+
+3. MrBayes and BUCKy raw data and results to generate Figure XXX.
+
+4. Single copy ortholog gene and protein alignments annotated using BUSCO for animals and *Saccharomyces* and used to generate the Figure XXX.
+
+5. GAL/MEL pathway genes and their encoded protein alignments, together with the IQTree log and Maximum Likelihood tree files. This dataset was used to generate Figure XXX.
+
+6. Alignemtns of annotated genes and their proteins with Yeast Genome Annotation Pipeline (YGAP) and IQtree log and Maximum Likelihood tree files. This dataset was used to generate Figure XXX.
+
+7. Individual mitochondrial gene alignments used to generate Figure XXX. COX2 and COX3 Sanger sequenced alignments to generate Figure XXX.
+
+8. iWGS genome assemblies for those strains with just Paired-end Illumina reads.
+
+9. Variant Call Format files necessary for population genomic analyses resulting in Figures XXX.
+
+10. Optican density 600nm values, 96-well plate pictures and additional information for each media condition run necessary to generate Figures XXX.
+
+### Used command lines
+For in-house scripts, please check instructions by calling reading the script with a text editor (my first scripts) or by running ```python script.py --help``` for the new scripts.
+If it is not specified, python scripts were run with python2 version 6+
+
+#### Illumina reads download and trimming
+```
+[INPUTFile]: input file
+[INPUTF]: path to the input folder containing illumina reads
+[OUTPUTF]: output folder to store results
+[READ]: read name
+[FQEXTENSION]: extension name of the illumina read
+
+python download_SRA_serially.py [INPUTFile] [OUTPUTF] YES
+python SRA_rename_v1.4.py [INPUTF] [FQEXTENSION] [INPUTF] [OUTPUTF]
+
+Paired-ended illumina reads
+fastqc -o [OUTPUTF] -f fastq [READ]_1.fq
+java -jar trimmomatic-0.33.jar PE -threads 4 -phred33 -trimlog analytics.txt [READ]_1.fq [READ]_2.fq [READ]_1.tm.fq [READ]_1.tm-se.fq [READ]_2.tm.fq [READ]_2.tm-se.fq ILLUMINACLIP:TruSeq2-PE.fa:2:30:10 TRAILING:3 MINLEN:25
+fastqc -o [OUTPUTF] -f fastq [READ]_1.tm.fq
+
+Mate pair illumina reads
+nextclip --input_one [READ]_1.fq --input_two [READ]_2.fq --output_prefix trimmed --log log.txt --trim_ends 5
+```
+
+#### Quick assesment of phylogenetic position with AAF (Alignment and Assembly Free) 
+```
+[INPUTF]: path to the input folder containing a strain folder with the PE illumina reads for that strain
+[KMER]: Number of kmers to be used
+[RUNNAME]: output file name
+
+python2.7 AAF_pipeline-kmer.py -i [INPUTF] -o [RUNNAME] -k [KMER]
+Convert the generated infile file to MEGA format and open it in MEGA to generate a Neighbor-Joining phylogenetic tree.
+```
+
+#### Assemblies and quality check with iWGS
+```
+[NAME].ctl: describe the information about PE and MP illumina reads, assemblers to use, checkpoints to perform and quality assessment of the genome assemblies.
+./iWGS -s [NAME].ctl --Real
+```
+
+#### Ultrascaffolding PE+MP genome assemblies
+```
+[GENOMEANAME]: genome assembly name
+[INPUTF]: input folder
+[INPUTFile]: input file
+
+python runMummer_serially.py [INPUTFile]
+Generated coords file is useful in the next step
+
+Rscript --vanilla reorderContigsUsingNucmer.R [GENOMEANAME].coords [GENOMEANAME].scaffolds.fa
+A file called remap.coords.result.csv is generated with the information about scaffolds mapping to chromosomes and if they were reverse complemented. This is useful information for manual curation in Geneious.
+
+python combining_orderedScaffolds.py [INPUTF]
+python generating_FinalAssembly.py -l 10000 -i [INPUTF]
+Some strains will need manual curation in Geneious. After Geneious curation, run mummer for confirmation.
+python runMummer_serially.py [INPUTFile]
+```
+
+#### mtDNA asembly pipeline
+```
+
+```
+
+####  Large structural variation (nuclear genome and mitochondrial genome)
+```
+
+```
+
+#### 
+```
+
+```
+
+#### 
+```
+
+```
+
+#### 
+```
+
+```
+
+#### 
+```
+
+```
+
+#### 
+```
+
+```
+
+#### 
+```
+
+```
 
 ***
 
