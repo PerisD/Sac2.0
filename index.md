@@ -76,7 +76,7 @@ The rest of genome assemblies for *Saccharomyces* strains, using just Paired-End
 
 ### Source data
 
-Raw data, alignments and results were deposited in [Dryad](doi:10.5061/dryad.rxwdbrv9p "Dryad repository"). The repository contains:
+Raw data, alignments and results were deposited in [Figshare](10.6084/m9.figshare.17185874 "Figshare repository"). The repository contains:
 
 1. Alignments of 2um plasmid genes *REP1* and *REP2* used in Figure XXX.
 
@@ -155,7 +155,7 @@ python generating_FinalAssembly.py -l 10000 -i [INPUTF]
 Some strains will need manual curation in Geneious. After Geneious curation, run mummer for confirmation.
 python runMummer_serially.py [INPUTFile]
 ```
-
+XXXCONTINUAR EN LINEA 1126
 #### mtDNA asembly pipeline
 ```
 
