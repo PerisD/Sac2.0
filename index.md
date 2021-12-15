@@ -132,10 +132,13 @@ python2.7 AAF_pipeline-kmer.py -i [INPUTF] -o [RUNNAME] -k [KMER]
 Convert the generated infile file to MEGA format and open it in MEGA to generate a Neighbor-Joining phylogenetic tree.
 ```
 
-#### Assemblies and quality check with iWGS
+#### Assemblies and quality check with iWGS v1.0
 ```
 [NAME].ctl: describe the information about PE and MP illumina reads, assemblers to use, checkpoints to perform and quality assessment of the genome assemblies.
+
+XXXXreads2iWGS2Assembly.py
 ./iWGS -s [NAME].ctl --Real
+XXXXqualimap
 ```
 
 #### Ultrascaffolding PE+MP genome assemblies
@@ -155,7 +158,17 @@ python generating_FinalAssembly.py -l 10000 -i [INPUTF]
 Some strains will need manual curation in Geneious. After Geneious curation, run mummer for confirmation.
 python runMummer_serially.py [INPUTFile]
 ```
-XXXCONTINUAR EN LINEA 1126
+
+#### GC content and other information
+[INPUTF]: path to the input folder containing genome assemblies
+[INPUTFile]: input file
+[OUTPUTF]: output folder to store results
+[RUNNAME]: output file name
+
+python seq_gc_count.py [INPUTF] [OUTPUTF] --window 25000 --window_print --min_contig 20000
+python seq_gc_plot.py [OUTPUTF] --window 25000 --out test.pdf --out_stats [RUNNAME].txt --min_contig 20000 --plot_len
+python infoseqout.py -i [INPUTF] -o [OUTPUTF] -f [INPUTFile]
+
 #### mtDNA asembly pipeline
 ```
 
@@ -163,17 +176,36 @@ XXXCONTINUAR EN LINEA 1126
 
 ####  Large structural variation (nuclear genome and mitochondrial genome)
 ```
-
+XXXXXXXXXpython runMummer_serially.py [INPUTFile]
 ```
 
-#### 
+#### Extract mtDNA and 2um plasmid genes with HybPiper
+```
+[FASTA]: input fasta file with target gene sequences, follow HybPiper target fasta format
+[INPUTFile]: strains and read paths to explore
+[PATH2HybPiper]: path to HybPiper folder with HybPiper scripts
+[OUTPUTF]: output folder to store results
+[iFASTAln] :input fasta alignment
+[OUTPUTFile]: output file
+
+python HybPiper_serially_v2.py -t [FASTA] -i [INPUTFile] -y [PATH2HybPiper] -o [OUTPUTF] -s [OPTION] -p [OPTION] -d [OPTION] --threads [OPTION]
+trimal -in [iFASTAln] -out [OUTPUTFile] -htmlout summary_stats -mega -gt 0.7
+trimal -in [iFASTAln] -out [OUTPUTFile] -htmlout summary_stats -fasta -gt 0.7
 ```
 
+#### Single Copy Orthologous Gene with BUSCO
 ```
+[INPUTFile]: folder with assemblies
+[OUTPUTF]: output folder to store results
 
-#### 
-```
+python runBUSCO_serially.py -i [INPUTFile] -t [OPTION] -o [OUTPUTF]
+python ~/software/scripts/busco_get_single_genes_nt.py busco_outputs/ --out single_genes_alignment_all
+XXXXXXXXXXXXpython rename_names_fasta-busco.py
+XXXXXXXXXXXXMAFFT_serially.py
+XXXXXXXXXXXXperl ~/software/FASconCAT/FASconCAT.pl -s
+XXXXXXXXXXXXtrimal -in XXX -out XXX -fasta -gt 0.9
 
+XXXCONTINUAR line 1522
 ```
 
 #### 
