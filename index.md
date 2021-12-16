@@ -352,6 +352,7 @@ python splitFASTAintoWindows.py -m chromosome.txt -W [OPTION] -i [INPUTF] -o [OU
 #### Population genomic analyses
 ```
 [INPUTf]: input file
+[OUTPUTf]: output file
 [INPUTF]: input folder
 [OUTGROUP]: strain name of the outgroup to root the tree
 [OUTPUTN]: output name
@@ -366,6 +367,11 @@ pairwiseDivFile_chromosome.txt: tab tabulated file with information of Chromosom
 #Combined fasta (from mapping4SNP_v2.0_multipleMaps.py) was trimmed with trimal -gt 0.9 and opened in MEGA v7 to get diversity stats and generate a fasta just for variant sites.
 #Variant sites were opened in DnaSP v5 to get polymorphism statistics
 
+#Diversity stats using PopGenome
+python check_alignments4PopGenome.py -i [INPUTF] #Input folder contains the fasta splited by windows
+trimal -in [INPUTf] -out [OUTPUTf] -gt 0.3
+Rscript pairwiseDiversity_validSitesComp_v2.1.R [INPUTF] pairwiseDivFile_chromosome.txt [InfoStrain] [OUTPUTN] #Input folder contains the fasta splited by windows
+
 #Convert results from mapping4SNP_v2.0_multipleMaps.py to other formats
 #STRUCTURE
 python ConvertOutputs_Mapping2GenomPopAnalysisTools.py -i [INPUTf] -t [OPTION] -r [REFGENOME] -o [OUTPUTN] -s [OUTGROUP] -f [INPUTF] -W [OPTION] -R [OPTION]
@@ -374,6 +380,8 @@ python structure_serially.py -k [OPTION] -r [OPTION] -o [OUTPUTF] -m [OPTION] -e
 #FineSTRUCTURE
 python FASTAtoFineStr_v2.0.py -i [INPUTf] -o [OUTPUTN] -s [InfoStrain] -c pairwiseDivFile_chromosome.txt -r Scer_recombinationRate.csv -e [OPTION]
 fs [INPUTN]_AllGenomes_fs.cp -idfile [INPUTN]_AllGenomes_fineStr.idfile -phasefiles [INPUTN]_AllGenomes_fineStr.phase -recombfiles [INPUTN]_AllGenomes_fineStr.recomb -ploidy 1 -go 
+fs -X -Y -e X2 [INPUTN]_AllGenomes_fs_linked_hap.chunkcounts.out [INPUTN]_AllGenomes_fs_linked_hap_tree_run0.xml [INPUTN]_AllGenomes_fs_linked_hap_mapstate.csv
+fs -X -Y -e meancoincidence [INPUTN]_AllGenomes_fs_linked_hap.chunkcounts.out [INPUTN]_AllGenomes_fs_linked_hap_mcmc_run0.xml [INPUTN]_AllGenomes_fs_linked_hap_meancoincidence.csv
 RScript fineStructure_plots_v2.0.R -p [OUTPUTN] -s [OPTION] -I [InfoStrain] -i [INPUTF] -N [OPTION] 
 
 #Convert to PCAdmix
