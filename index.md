@@ -165,14 +165,17 @@ python mapping-and-pilon_serially.py -i [INPUTFile] -t [OPTION] -q [OPTION] -e [
 
 #### GC content and other information
 ```
+[INPUTName]: name of the input
 [INPUTF]: path to the input folder containing genome assemblies
 [INPUTFile]: input file
 [OUTPUTF]: output folder to store results
 [RUNNAME]: output file name
+[REFGENOME]: the reference genome where reads will be mapped
 
 python seq_gc_count.py [INPUTF] [OUTPUTF] --window 25000 --window_print --min_contig 20000
 python seq_gc_plot.py [OUTPUTF] --window 25000 --out test.pdf --out_stats [RUNNAME].txt --min_contig 20000 --plot_len
 python infoseqout_v1.1.py -o [OUTPUTF] -f [INPUTFile]
+python quast.py --fast -t 8 -o [RUNNAME] --eukaryote -R [REFGENOME] --gage -l [INPUTName] [INPUTFile]
 ```
 
 #### mtDNA asembly pipeline
@@ -185,7 +188,7 @@ python infoseqout_v1.1.py -o [OUTPUTF] -f [INPUTFile]
 python infoseqout_v1.1.py -o [OUTPUTF] -f [INPUTFile]
 python filter_fasta_v3.py -i [INPUTf] -o [OUTPUTF] -p [OPTION] -f [INPUTF]
 #In the table look for a scaffold with a size between 40-90 Kbp 
-#Annotate with MFannot
+#Annotate with [MFannot](https://megasun.bch.umontreal.ca/cgi-bin/mfannot/mfannotInterface.pl "MFannot")
 #Convert sequin output to genbank with Sequin v16.0. Open genbank file in Geneious
 #Sort the fasta sequence to start with trnS(tga), export fasta and reannotate in MFannot. Repeat previous step.
 #Extract gene sequences and make multisequence alignments
@@ -300,6 +303,10 @@ iqtree -t Saccharomyces_species_pp.tre --gcf YGAP_ML_best.trees --prefix gene_co
 raxmlHPC-PTHREADS-SSE3 -T 4 --no-bfgs -f d -m ASC_GTRGAMMA --asc-corr=stamatakis -p 54877 -s [INPUTN]_AllGenomes_SNPs.fasta -#100 -n [OUTPUTN] -w [OUTPUTF]/best_tree/ -q part
 raxmlHPC-PTHREADS-SSE3 -T 4 --no-bfgs -m ASC_GTRGAMMA --asc-corr=stamatakis -#1000 -b 12345 -s [INPUTN]_AllGenomes_SNPs.fasta -n [OUTPUTN] -t [OUTPUTF]/best_tree/RAxML_bestTree.SNP -w [OUTPUTF]/boots/ -q part
 raxmlHPC-PTHREADS-SSE3 -T 4 --no-bfgs -p 12345 -m ASC_GTRCAT --asc-corr=stamatakis -f b -t [OUTPUTF]/best_tree/RAxML_bestTree.SNP -n [OUTPUTN] -z [OUTPUTF]/boots/RAxML_bootstrap.SNP -w [OUTPUTF]/bipartitions/ -q part
+
+#Phylonetwork, just open your fasta file in SplitsTree
+#Supernetworks/Galled Trees/ SuperTrees, open your collection of phylogenetic trees in SplitsTree or Dendoscrope
+
 ```
 
 #### Phylogenetic network of COX2 and COX3 sequences
@@ -325,9 +332,13 @@ Rscript Hap2Freq2Nex.R -i [INPUTf] -s [InfoStrain] -c [OPTION] -o [OUTPUTf]
 [INPUTb]: folder with *.in files
 [OUTPUTF]: output folder to store results
 [OUTGROUP]: strain name of the outgroup to root the tree
+[#GENES2PICK]: number of genes to pick
 
 python genes2bucky_v1.0.py -i [INPUTF] -o [OUTPUTF] -l [OPTION] -m MrBayes_param.txt -g [OUTGROUP] -r [OPTION] -t [OPTION]  -n [OPTION] > [LOGFILE].txt
 bucky -a 1 -k 3 -n 100000 -c 2 -o [OUTPUTF] --calculate-pairs --create-joint-file --create-single-file [INPUTb]/*.in
+
+#You want to randomize which gene you pick for bucky analyses or computational expensive programs
+python ~/software/scripts/bucky_RandomPick_v1.0.py -s [#GENES2PICK] -a 1 -i [INPUTF] -o [OUTPUTF]
 ```
 
 #### Mapping and genotyping
