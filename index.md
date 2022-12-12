@@ -13,7 +13,7 @@ Assemblies, raw data and scripts from Peris et al XXX
 
 <div style="text-align:center"><img src="https://sismo.app/wp-content/uploads/2019/02/under-construction-gif-11.gif" width="250"/></div>
 
-[Phylogenetic Tree](http://XXX)
+[Phylogenetic Tree](http://bit.ly/2PYRuUc)
 
 ### Saccharomyces strains
 
@@ -25,35 +25,33 @@ The Illumina sequencing reads for this project has been deposed in the Short Rea
 
 ### Saccharomyces genomes
 
-[Description of the sequencing and libraries]
-
 New nuclear, mitochondrial and genome assemblies for different *Saccharomyces* lineages assembled by using Paired-End and Mate Pair Illumina libraries. FIles were deposited to the European Nucleotide Archive under bioproject PRJEB48264.
 
 Strain |Species|Pop| ENA Accession no
 -------|-------|---|------------------
-yHAB335|*S.cerevisiae*|CHN IV|[GCA_918239655](LINK "GCA_918239655")
-yHDPN23|*S.paradoxus*|Am-B|[GCA_918221835](LINK "GCA_918221835")
-yHDPN24|*S.paradoxus*|Am-C|[GCA_918281175](LINK "GCA_918281175")
-yHDPN32|*S.paradoxus*|EU/Am-A|[GCA_918265645](LINK "GCA_918265645")
-IFO1815|*S.mikatae*|Asia-A|[GCA_918250775](LINK "GCA_918250775")
-yHAB336|*S.mikatae*|Asia-B|[GCA_918272125](LINK "GCA_918272125")
-IFO1802|*S.kudriavzevii*|Asia-A|[GCA_918252685](LINK "GCA_918252685")
-IFO1803|*S.kudriavzevii*|Asia-B|[GCA_918257225](LINK "GCA_918257225")
-yHKS300|*S.kudriavzevii*|EU|[GCA_918282095](LINK "GCA_918282095")
-ZP591|*S.kudriavzevii*|EU|[GCA_918268175](LINK "GCA_918268175")
-ZP960|*S.arboricola*|Oceania|[GCA_918268255](LINK "GCA_918268255")
-CDFM21L.1|*S.eubayanus*|HOL|[GCA_918271895](LINK "GCA_918271895")
-yHAB94|*S.eubayanus*|PA-A|[GCA_918265725](LINK "GCA_918265725")
-yHCT69|*S.eubayanus*|PA-B|[GCA_918298305](LINK "GCA_918298305")
-yHCT99|*S.eubayanus*|PA-A|[GCA_918246195](LINK "GCA_918246195")
-yHRVM108|*S.eubayanus*|HOL|[GCA_918265445](LINK "GCA_918265445")
-CBS7001|*S.uvarum*|HOL-EU|[GCA_918261815](LINK "GCA_918261815")
-yHAB60|*S.uvarum*|HOL/SA-A|[GCA_918251765](LINK "GCA_918251765")
-yHAB447|*S.uvarum*|HOL/SA-A|[GCA_918298155](LINK "GCA_918298155")
-yHAB482|*S.uvarum*|HOL/SA-A|[GCA_918264245](LINK "GCA_918264245")
-yHAB521|*S.uvarum*|SA-B|[GCA_918280685](LINK "GCA_918280685")
-yHCT77|*S.uvarum*|HOL-NA|[GCA_918221285](LINK "GCA_918221285")
-ZP964|*S.uvarum*|Australasia|[GCA_918269355](LINK "GCA_918269355")
+yHAB335|*S.cerevisiae*|CHN IV|[GCA_918239655](https://www.ncbi.nlm.nih.gov/assembly/GCA_918239655.1/ "GCA_918239655")
+yHDPN23|*S.paradoxus*|Am-B|[GCA_918221835](https://www.ncbi.nlm.nih.gov/assembly/GCA_918221835.1/ "GCA_918221835")
+yHDPN24|*S.paradoxus*|Am-C|[GCA_918281175](https://www.ncbi.nlm.nih.gov/assembly/GCA_918281175.1/ "GCA_918281175")
+yHDPN32|*S.paradoxus*|EU/Am-A|[GCA_918265645](https://www.ncbi.nlm.nih.gov/assembly/GCA_918265645.1/ "GCA_918265645")
+IFO1815|*S.mikatae*|Asia-A|[GCA_918250775](https://www.ncbi.nlm.nih.gov/assembly/GCA_918250775.1/ "GCA_918250775")
+yHAB336|*S.mikatae*|Asia-B|[GCA_918272125](https://www.ncbi.nlm.nih.gov/assembly/GCA_918272125.1/ "GCA_918272125")
+IFO1802|*S.kudriavzevii*|Asia-A|[GCA_918252685](https://www.ncbi.nlm.nih.gov/assembly/GCA_918252685.1/ "GCA_918252685")
+IFO1803|*S.kudriavzevii*|Asia-B|[GCA_918257225](https://www.ncbi.nlm.nih.gov/assembly/GCA_918257225.1/ "GCA_918257225")
+yHKS300|*S.kudriavzevii*|EU|[GCA_918282095](https://www.ncbi.nlm.nih.gov/assembly/GCA_918282095.1/ "GCA_918282095")
+ZP591|*S.kudriavzevii*|EU|[GCA_918268175](https://www.ncbi.nlm.nih.gov/assembly/GCA_918268175.1/ "GCA_918268175")
+ZP960|*S.arboricola*|Oceania|[GCA_918268255](https://www.ncbi.nlm.nih.gov/assembly/GCA_918268255.1/ "GCA_918268255")
+CDFM21L.1|*S.eubayanus*|HOL|[GCA_918271895](https://www.ncbi.nlm.nih.gov/assembly/GCA_918271895.1/ "GCA_918271895")
+yHAB94|*S.eubayanus*|PA-A|[GCA_918265725](https://www.ncbi.nlm.nih.gov/assembly/GCA_918265725.1/ "GCA_918265725")
+yHCT69|*S.eubayanus*|PA-B|[GCA_918298305](https://www.ncbi.nlm.nih.gov/assembly/GCA_918298305.1/ "GCA_918298305")
+yHCT99|*S.eubayanus*|PA-A|[GCA_918246195](https://www.ncbi.nlm.nih.gov/assembly/GCA_918246195.1/ "GCA_918246195")
+yHRVM108|*S.eubayanus*|HOL|[GCA_918265445](https://www.ncbi.nlm.nih.gov/assembly/GCA_918265445.1/ "GCA_918265445")
+CBS7001|*S.uvarum*|HOL-EU|[GCA_918261815](https://www.ncbi.nlm.nih.gov/assembly/GCA_918261815.1/ "GCA_918261815")
+yHAB60|*S.uvarum*|HOL/SA-A|[GCA_918251765](https://www.ncbi.nlm.nih.gov/assembly/GCA_918251765.1/ "GCA_918251765")
+yHAB447|*S.uvarum*|HOL/SA-A|[GCA_918298155](https://www.ncbi.nlm.nih.gov/assembly/GCA_918298155.1/ "GCA_918298155")
+yHAB482|*S.uvarum*|HOL/SA-A|[GCA_918264245](https://www.ncbi.nlm.nih.gov/assembly/GCA_918264245.1/ "GCA_918264245")
+yHAB521|*S.uvarum*|SA-B|[GCA_918280685](https://www.ncbi.nlm.nih.gov/assembly/GCA_918280685.1/ "GCA_918280685")
+yHCT77|*S.uvarum*|HOL-NA|[GCA_918221285](https://www.ncbi.nlm.nih.gov/assembly/GCA_918221285.1/ "GCA_918221285")
+ZP964|*S.uvarum*|Australasia|[GCA_918269355](https://www.ncbi.nlm.nih.gov/assembly/GCA_918269355.1/ "GCA_918269355")
 
 
 Corrections or genome assemblies used in the recent work. Files were compressed using tar, to uncompress them use `tar -xvzf FILENAME`
@@ -75,27 +73,27 @@ The rest of genome assemblies for *Saccharomyces* strains, using just Paired-End
 
 ### Source data
 
-Raw data, alignments and results were deposited in [Figshare](10.6084/m9.figshare.17185874 "Figshare repository"). The repository contains:
+Raw data, alignments and results were deposited in [Figshare](https://dx.doi.org/10.6084/m9.figshare.17185874 "Figshare repository"). The repository contains:
 
-1. Alignments of 2um plasmid genes *REP1* and *REP2* used in Figure XXX.
+1. Alignments of 2um plasmid genes *REP1* and *REP2* used in Supplementary Figure 17.
 
-2. ASTRAL run and outputs to generate Figure XXX.
+2. ASTRAL run and outputs to generate Figure 4a.
 
-3. MrBayes and BUCKy raw data and results to generate Figure XXX.
+3. MrBayes and BUCKy raw data and results to generate Figure 4a, Supplementary Figure 13.
 
-4. Single copy ortholog gene and protein alignments annotated using BUSCO for animals and *Saccharomyces* and used to generate the Figure XXX.
+4. Single copy ortholog gene and protein alignments annotated using BUSCO for animals and *Saccharomyces* and used to generate the Figure 3c.
 
-5. GAL/MEL pathway genes and their encoded protein alignments, together with the IQTree log and Maximum Likelihood tree files. This dataset was used to generate Figure XXX.
+5. GAL/MEL pathway genes and their encoded protein alignments, together with the IQTree log and Maximum Likelihood tree files. This dataset was used to generate Figure 6a, Supplementary Figure 27,28.
 
-6. Alignemtns of annotated genes and their proteins with Yeast Genome Annotation Pipeline (YGAP) and IQtree log and Maximum Likelihood tree files. This dataset was used to generate Figure XXX.
+6. Alignemtns of annotated genes and their proteins with Yeast Genome Annotation Pipeline (YGAP) and IQtree log and Maximum Likelihood tree files. This dataset was used to generate Figure 4, Supplementary Figure 11, 12, 14.
 
-7. Individual mitochondrial gene alignments used to generate Figure XXX. COX2 and COX3 Sanger sequenced alignments to generate Figure XXX.
+7. Individual mitochondrial gene alignments used to generate Figure 2, Supplementary Figure 4,. COX2 and COX3 Sanger sequenced alignments to generate Figure 2, Supplementary Figure 3.
 
 8. iWGS genome assemblies for those strains with just Paired-end Illumina reads.
 
-9. Variant Call Format files necessary for population genomic analyses resulting in Figures XXX.
+9. Variant Call Format files necessary for population genomic analyses resulting in Figure 3a,b, Supplementary Figure 9, 10, 15.
 
-10. Optican density 600nm values, 96-well plate pictures and additional information for each media condition run necessary to generate Figures XXX.
+10. Optican density 600nm values, 96-well plate pictures and additional information for each media condition run necessary to generate Figure 5, 6, Supplementary Figure 18-27, 29.
 
 ### Used command lines
 For in-house scripts, please check instructions by calling reading the script with a text editor (my first scripts) or by running ```python script.py --help``` for the new scripts.
