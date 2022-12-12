@@ -15,7 +15,7 @@ Assemblies, raw data and scripts from Peris et al XXX
 
 ### Saccharomyces strains
 
-Request information for Saccharomyces strains used in this study can be found in Table SXXX.
+Request information for Saccharomyces strains used in this study can be found in Supplementary Data 1.
 
 ### Raw Reads
 
