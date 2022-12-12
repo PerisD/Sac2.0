@@ -261,7 +261,7 @@ python checkLength_OriginalvsTrimmed.py -i genes_trimmed/ -o genes_aligned/ -a [
 python pull_buscoTirant.py -d eukaryota_odb10 -l [FASTAf] -o [OUTPUTF] -s [OPTION]
 ```
 
-#### Genome annotation with [YGAP](http://wolfe.ucd.ie/annotation/, "YGAP")
+#### Genome annotation with [YGAP](http://wolfe.ucd.ie/annotation/ "YGAP")
 ```
 [INPUTf]: input file
 [INPUTF]: folder with assemblies and gff
