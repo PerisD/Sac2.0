@@ -11,8 +11,6 @@ Assemblies, raw data and scripts from Peris et al XXX
 
 **Abstract**: Species is the fundamental unit to quantify biodiversity. In recent years, the model yeast *Saccharomyces cerevisiae* has seen an increased number of studies related to its geographical distribution, population structure, and phenotypic diversity. However, seven additional species from the same genus have been less thoroughly studied, which has limited our understanding of the macroevolutionary leading to the diversification of this genus over the last 20 million years. Here, we report the geographies, hosts, substrates, and phylogenetic relationships for approximately 1,800 *Saccharomyces* strains, covering the complete genus with unprecedented breadth and depth. We generated and analyzed complete genome sequences of 163 strains and phenotyped 128 phylogenetically diverse strains. This dataset provides insights about genetic and phenotypic diversity within and between species and populations, quantifies reticulation and incomplete lineage sorting, and demonstrates how gene flow and selection have affected traits, such as galactose metabolism. These findings elevate the genus *Saccharomyces* as a model to understand biodiversity and evolution in microbial eukaryotes.
 
-<div style="text-align:center"><img src="https://sismo.app/wp-content/uploads/2019/02/under-construction-gif-11.gif" width="250"/></div>
-
 [Phylogenetic Tree](http://bit.ly/2PYRuUc)
 
 ### Saccharomyces strains
@@ -26,6 +24,8 @@ The Illumina sequencing reads for this project has been deposed in the Short Rea
 ### Saccharomyces genomes
 
 New nuclear, mitochondrial and genome assemblies for different *Saccharomyces* lineages assembled by using Paired-End and Mate Pair Illumina libraries. FIles were deposited to the European Nucleotide Archive under bioproject PRJEB48264.
+
+BLAST server: [Sac2.0 BLAST server](https://gxseq.glbrc.org/assemblies "Sac2.0 BLAST server")
 
 Strain |Species|Pop| ENA Accession no
 -------|-------|---|------------------
