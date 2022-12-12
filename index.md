@@ -65,7 +65,7 @@ CBS10644|*S.arboricola*|Asia-A|[Liti et al 2013](https://yjx1217.github.io/Yeast
 Other genome assemblies from recent papers stored in Github:
 2. [Yue et al 2017](https://yjx1217.github.io/Yeast_PacBio_2016/data/ "YPRP"): CBS432, DBVPG6044, DBVPG6765, N44, SK1, UFRJ50816, UWOPS03-461.4, UWOPS91-917.1, Y12, YPS128, YPS138
 
-The rest of genome assemblies for *Saccharomyces* strains, using just Paired-End Illumina reads, are compressed in this [file](https://github.com/PerisD/Sac2.0/blob/master/NGENOMES/other.assemblies.gz "OtherAssemblies")
+The rest of genome assemblies for *Saccharomyces* strains, using just Paired-End Illumina reads, are in the FigShare repository.
 
 *COX2* and *COX3* sequences were deposited in GenBank under accession nos. MH813536-MH813939.
 
@@ -94,6 +94,8 @@ Raw data, alignments and results were deposited in [Figshare](https://dx.doi.org
 9. Variant Call Format files necessary for population genomic analyses resulting in Figure 3a,b, Supplementary Figure 9, 10, 15.
 
 10. Optican density 600nm values, 96-well plate pictures and additional information for each media condition run necessary to generate Figure 5, 6, Supplementary Figure 18-27, 29.
+
+11. The rest of genome assemblies for *Saccharomyces* strains.
 
 ### Used command lines
 For in-house scripts, please check instructions by calling reading the script with a text editor (my first scripts) or by running ```python script.py --help``` for the new scripts.
