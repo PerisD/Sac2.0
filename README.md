@@ -1,7 +1,7 @@
 # Macroevolutionary diversity of traits and genomes in the model yeast genus *Saccharomyces*
 ***
 
-Assemblies, raw data and scripts from Peris et al XXX
+Assemblies, raw data and scripts from Peris et al 2023 Nat Comm.
 
 **Authors**: David Peris, Emily J. Ubbelohde, Meihua Christina Kuang, Jacek Kominek, Quinn K. Langdon, Marie Adams, Justin A. Koshalek, Amanda Beth Hulfachor, Dana A. Opulente, David J. Hall, Katie Hyma, Justin C. Fay, Jean-Baptiste Leducq, Guillaume Charron, Christian R. Landry, Diego Libkind, Carla Gonçalves, Paula Gonçalves, José Paulo Sampaio, Qi-Ming Wang, Feng-Yan Bai, Russel L. Wrobel, Chris Todd Hittinger
 
